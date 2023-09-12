@@ -50,7 +50,7 @@ You only need to use docker run once to create your container image. Subsequent 
 ```
 
 ### Conceptual Understanding/Answer the following questions:
-```
+
 * On Bender, compare the execution time of a 256 x 256 square matrix multiplication compared to a 1024 x 64 and 64 x 1024 rectangular matrix multiply.  
 All input matricies have 65k entries. What do you observe? Which is faster? Can you explain the observed behavior?  
 Tip: You may want to comment out the verify() function in main.cu when timing this question.
@@ -63,7 +63,6 @@ Tip: You may want to comment out the verify() function in main.cu when timing th
 * Which tile size resulted in the least number of accesses to global memory? Which tile size resulted in the most number of accesses to global memory? What is the reasoning behind this observation?
 
 * Which tile size performed the fastest, which tile size performed the slowest? Why do you think that is?
-```
 
-<img src="/Bryce-Hills.pdf" alt="alt text" width="700" height="500">  
+<img src="Bryce-Hills.pdf/" alt="alt text" width="700" height="500">  
 
