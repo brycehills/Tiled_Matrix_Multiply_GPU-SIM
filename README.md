@@ -1,6 +1,4 @@
-# Titled Matrix Multiply CUDA - with GP-GPU Sim
-
-Simple overview of use/purpose.
+# Titled Matrix Multiply CUDA - with GPGPU Sim + Docker
 
 ## Description
 
@@ -50,3 +48,16 @@ You only need to use docker run once to create your container image. Subsequent 
 - Now run a binary. For example, we can run the RAY binary in ISPASS2009. ~/ispass2009-benchmarks/bin/release/RAY 4 4
 - Note: If ~/ispass2009-benchmarks/bin/release/RAY does not exist, you will need to compile it first by doing the following: cd ~/ispass2009-benchmarks/RAY/;make clean;make;
 ```
+
+### Conceptual Understanding/Answer the following questions:
+```
+On Bender, compare the execution time of a 256 x 256 square matrix multiplication compared to a 1024 x 64 and 64 x 1024 rectangular matrix multiply. All input matricies have 65k entries. What do you observe? Which is faster? Can you explain the observed behavior? Tip: You may want to comment out the verify() function in main.cu when timing this question.
+Conceptual Question: For a 64 square tiled matrix multiplication, how many times is each element of the input matrices loaded from global memory? Assume 16x16 tiles.
+
+Conceptual Question: For a 64 square non-tiled matrix multiplication, how many times is each element of the input matrices loaded from global memory?
+
+GPGPU-Sim related question: In this part, we will compare the execution of a 128x128 square tiled matrix multiplication across different tile sizes. Run ./sgemm-tiled 128 in GPGPU-Sim with TILE_SIZE of 8, 16 (default), and 32. Fill the following table:Anaylsis:
+```
+
+<img src="Bryce-Hills.pdf" alt="alt text" width="700" height="500">  
+
