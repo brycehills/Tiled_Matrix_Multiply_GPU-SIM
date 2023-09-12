@@ -51,18 +51,12 @@ You only need to use docker run once to create your container image. Subsequent 
 
 ### Conceptual Understanding/Answer the following questions:
 
-* On Bender, compare the execution time of a 256 x 256 square matrix multiplication compared to a 1024 x 64 and 64 x 1024 rectangular matrix multiply.  
-All input matricies have 65k entries. What do you observe? Which is faster? Can you explain the observed behavior?  
-Tip: You may want to comment out the verify() function in main.cu when timing this question.
-  
+* On Bender, compare the execution time of a 256 x 256 square matrix multiplication compared to a 1024 x 64 and 64 x 1024 rectangular matrix multiply. All input matricies have 65k entries. What do you observe? Which is faster? you explain the observed behavior? Tip: You may want to comment out the verify() function in main.cu when timing this question.
 * Conceptual Question: For a 64 square tiled matrix multiplication, how many times is each element of the input matrices loaded from global memory? Assume 16x16 tiles.  
 * Conceptual Question: For a 64 square non-tiled matrix multiplication, how many times is each element of the input matrices loaded from global memory?
-
 * GPGPU-Sim related question: In this part, we will compare the execution of a 128x128 square tiled matrix multiplication across different tile sizes. Run ./sgemm-tiled 128 in GPGPU-Sim with TILE_SIZE of 8, 16 (default), and 32. Fill the following table:Anaylsis:
-
 * Which tile size resulted in the least number of accesses to global memory? Which tile size resulted in the most number of accesses to global memory? What is the reasoning behind this observation?
-
 * Which tile size performed the fastest, which tile size performed the slowest? Why do you think that is?
 
-<img src="Bryce-Hills.pdf/" alt="alt text" width="700" height="500">  
+<img src="Bryce-Hills.pdf" alt="alt text" width="700" height="500">  
 
