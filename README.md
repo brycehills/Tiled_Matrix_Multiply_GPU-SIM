@@ -69,6 +69,12 @@ root@f9cf5ab00628:~# nvcc
 * Which tile size resulted in the least number of accesses to global memory? Which tile size resulted in the most number of accesses to global memory? What is the reasoning behind this observation?
 * Which tile size performed the fastest, which tile size performed the slowest? Why do you think that is?
 
-[Bryce-Hills.pdf](https://github.com/brycehills/Tiled_Matrix_Multiply_GPU-SIM/files/12589446/Bryce-Hills.pdf)
+### Answers Below: 
+
+![ss+(2023-09-12+at+11 04 59)](https://github.com/brycehills/Tiled_Matrix_Multiply_GPU-SIM/assets/14365127/ed7086a0-2f04-4fa9-82b9-9ca821f149b2)
+
+![ss+(2023-09-12+at+11 05 12)](https://github.com/brycehills/Tiled_Matrix_Multiply_GPU-SIM/assets/14365127/f1c156c8-c2e2-4b19-a8ee-2571eb040efa)
+
+![ss+(2023-09-12+at+11 05 25)](https://github.com/brycehills/Tiled_Matrix_Multiply_GPU-SIM/assets/14365127/4b36f9d9-5ae7-403f-a261-aa7636cd1558)
 
 
