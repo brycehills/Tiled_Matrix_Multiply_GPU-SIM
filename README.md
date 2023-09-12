@@ -48,6 +48,17 @@ You only need to use docker run once to create your container image. Subsequent 
 - Now run a binary. For example, we can run the RAY binary in ISPASS2009. ~/ispass2009-benchmarks/bin/release/RAY 4 4
 - Note: If ~/ispass2009-benchmarks/bin/release/RAY does not exist, you will need to compile it first by doing the following: cd ~/ispass2009-benchmarks/RAY/;make clean;make;
 ```
+* Running the program on docker image:
+```
+- Let's make another directory for your assignment 2 reduction: mkdir ~/assignment2
+- Go into your assignment 2 directory. cd ~/assignment2
+- Move your reduction code to this directory. If you have modified code in Bender, then you can potentially push to Github and then clone the repo in the Docker container.
+- You can compile your CUDA code as you do on Bender using make
+- If you get the following error, you simply need to do source ~/gpgpu-sim_distribution/setup_enviroment again in the gpgpu-sim_distribution folder
+root@f9cf5ab00628:~# nvcc
+- nvcc fatal : No input files specified; use option --help for more information
+- Once compiled, you run the program as detailed in the previous section
+```
 
 ### Conceptual Understanding/Answer the following questions:
 
@@ -58,5 +69,5 @@ You only need to use docker run once to create your container image. Subsequent 
 * Which tile size resulted in the least number of accesses to global memory? Which tile size resulted in the most number of accesses to global memory? What is the reasoning behind this observation?
 * Which tile size performed the fastest, which tile size performed the slowest? Why do you think that is?
 
-<img src="Bryce-Hills.pdf" alt="alt text" width="700" height="500">  
+<img src="main/Bryce-Hills.pdf" alt="alt text" width="700" height="500">  
 
